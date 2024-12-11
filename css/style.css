@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Section */
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Section */
+
+header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
+    background-color: #331436;
+    border: 0px;
+}
+
+header h1 {
+    font-size: 24px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    line-height: 24px;
+    color: #FFF;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+.right-header {
+    margin-left: auto;
+    padding: 4vh;
+    display: flex;
+    justify-content: left;
+
+}
+
+.right-header p{
+    font-family: Roboto, sans-serif;
+    justify-content: center;
+    text-align: end;
+    padding: 10px;
+    color: white;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.button-login {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    background-color: #CB4F57;
+    color: #FCF4B6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    width: 240px;    
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+}
+
+.busca-form {
+    display: flex;
+    background-color: transparent;
+    border:1px solid rgba(255, 255, 255, 0.3);
+    border-radius:8px;
+    width:180px;
+    height: 36px;
+    
+}
+  
+.busca-txt {
+    background-color:transparent;
+    font-size:12px;
+    border: none;
+    margin-left: 1vh;
+    max-width: 13vh;
+}
+
+.busca-icon {
+    background-color:transparent;
+    max-width: 10vh;
+    max-height: 10vh;
+    padding: 0.5vh;
+}
+
+
+/* Welcome Section */
+
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #7A1745;
+    max-height: 496px; 
+    margin: 0;
+    gap: 20px;
+}
+
+.right-welcome {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 50%;
+    margin-left: 100px;
+}
+
+.right-welcome h1 {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    color: #FCF4B6;
+    font-size: 50px;
+    margin-bottom: 40px;
+    width: 100%;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.color1 {
+    color: white;
+    
+}
+.color2 {
+    color: #FCF4B6;
+}
+
+.right-welcome p {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 0;
+    max-width: 75%;
+    width: 100%; 
+    line-height: 1.6; 
+    margin-bottom: 24px;
+}
+
+.left-welcome {
+    flex: 1;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: center;
+    object-fit: contain;
+}
+
+.welcome-img {
+    justify-content: center;
+    align-items: center;
+    width: 30vh;
+    height: 30vh;
+}
+
+/* Manager Section */
+
+.manager-section {
+    display: flex;
+    flex-direction: column;
+    height: 792px;
+}
+
+.manager-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 30px;
+}
+
+.manager-text h1 {
+    font-family: Roboto, sans-serif;
+    text-align: left;
+    color: #000;
+    font-size: 40px;
+    width: 100%;
+    margin: 20px;
+}
+
+.manager-text p {
+    text-align: left;   
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: #000;
+    max-width: 100%;
+    width: 100%;
+    margin: 20px; 
+    line-height: 1.6; 
+}
+
+.button-purple {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    background-color: #331436;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 240px;    
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+}
+
+.manager-cards {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+    align-items: center;
+    
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    color: #331436;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.card p {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    color: #331436;
+    margin: 0;
+    padding: 0;
+}
+
+/* Featured Tools Section */
+
+.featuredtools-section {
+    display: flex;
+    flex-direction: column;
+    height: 792px;
+    background-color: rgba(252, 244, 182, 0.5);
+}
+
+.featuredtools-text {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.featuredtools-text h1 {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    color: #331436;
+    font-size: 40px;
+    width: 100%;
+    margin: 20px;
+}
+
+.featuredtools-text p {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: #331436;
+    max-width: 100%;
+    width: 100%;
+    margin: 20px; 
+    line-height: 1.6; 
+}
+
+.featuredtools-icons {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+    align-items: center; 
+}
+
+.icon {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+.icon img {
+    width: 100px;
+}
+
+.icon h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #331436;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.icon p {
+    font-family: Roboto, sans-serif;
+    font-size: 6px;
+    color: #331436;
+    margin: 0;
+    padding: 0;
+}
+
+/* Subscribe Section */
+
+.subscribe-section {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    margin: 100px;
+    align-items: center;
+    padding: 0;
+    height: 388px;
+    background-color: #FFF;
+    border: 0px;
+}
+
+.subscribe-text {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: #331436;
+    max-width: 100%;
+    width: 100%;
+    margin: 20px; 
+    line-height: 1.6; 
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    border-radius: 8px;
+    padding: 10px;
+    width: 330vh;
+    box-sizing: border-box;
+}
+
+.subscribe-form label {
+    font-family: Roboto, sans-serif;
+    color: #331436;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.subscribe-form input {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.subscribe-form input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.subscribe-form .button-purple {
+    background-color: #6A0DAD;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.subscribe-form .button-purple:hover {
+    background-color: #8A2BE2;
+}
+
+/* Footer Section  */
+
+footer {
+    height: 220px;
+    background-color: #331436;
+}
+
+.footer-container {
+    display: flex;
+    height: 220px;
+    background-color: #331436;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: top;
+    align-items: center;
+}
+
+.footer-rights, .footer-policy, .footer-terms {
+    color: #FFF;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: top;
+    align-items: center;
+}
+
+.footer-rights, .footer-policy, .footer-terms {
+    color: #FFF;
+    width: 30%;
+    font-family: Roboto, sans-serif;
+    font-size: 6px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Todo Cards Section */
+
+.container-kanban {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.phases-kanban {
+    margin: 30px;
+    min-height: 50vh;
+    min-width: 180px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.card-todo {
+    margin: 15px;
+    border: solid 1px #331436;
+    min-height: 10vh;
+    width: 150px;
+    border-radius: 8px;
+    background-color: #F8F2FF;
+}
+
+.phases-kanban h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    padding: 16px;
+    color: #331436;
+}
