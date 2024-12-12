@@ -10,10 +10,11 @@
     <div class="container">
         <header>
             <div class="left-header">
-                <img src="/images/logo 1.png" alt="" class="logo">
+                <a href="home.html">
+                    <img src="/images/logo 1.png" alt="" class="logo">
+                </a>
                 <h1>Project Manager</h1>
             </div>
-    </div>
         </header>
         <main>
             <div class="subscribe-section">
@@ -22,17 +23,17 @@
                     <p>Enter your credentials</p>
                 </div>
                 <div class="subscribe-form">
-                    <form action="#" method="POST">
-
+                    <form id='form' method="POST">
                         <div class="subscribe-form-email">
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="Enter your email" required>                              
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" placeholder="Enter your email">
+                            <small id="textEmail"></small>
                         </div>
-
-                                             
                         <div class="subscribe-form-email">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Enter your password" required>                        
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Enter your password">
+                            <small id="textPassword"></small>
+                        </div>
                         <button type="submit" class="button-purple">Login</button>
                     </form>
                 </div>
@@ -54,10 +55,9 @@
                 <div class="footer-terms">
                     <h1>Terms of Service</h1>
                 </div>
-            </div>            
+            </div>
         </footer>
     </div>
-
     <script src="/scripts/main.js"></script>
 </body>
 </html>

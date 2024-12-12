@@ -27,10 +27,9 @@ header{
 }
 
 header h1 {
-    font-size: 24px;
+    font-size: 28px;
     font-family: Roboto, sans-serif;
-    font-style: normal;
-    line-height: 24px;
+    line-height: 36px;
     color: #FFF;
 }
 
@@ -371,7 +370,6 @@ header h1 {
     text-align: left;
 }
 
-
 .subscribe-form {
     flex: 1;
     display: flex;
@@ -393,6 +391,12 @@ header h1 {
     flex-direction: column;
     margin-bottom: 15px;
   }
+
+.subscribe-form-email small {
+    font-family: Roboto, sans-serif;
+    font-size: 8px;
+    color: red
+} 
 
 .subscribe-form input {
     background-color: transparent;
