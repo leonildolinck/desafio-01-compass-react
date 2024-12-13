@@ -1,3 +1,5 @@
+/* Setting Defaults*/
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +7,10 @@
 }
 
 /* Body Section */
+
+body {
+    font-family: Roboto, sans-serif;
+}
 
 .container {
     flex: 1;
@@ -14,8 +20,7 @@
 
 /* Header Section */
 
-header{
-    
+header{    
     display: flex;
     justify-content: space-between;
     align-content: flex-start;
@@ -23,35 +28,34 @@ header{
     padding: 0 20px;
     height: 80px;
     background-color: #331436;
-    border: 0px;
 }
 
 header h1 {
     font-size: 28px;
-    font-family: Roboto, sans-serif;
     line-height: 36px;
     color: #FFF;
+    font-weight: normal;
 }
 
 .left-header {
+    flex: 0 0 auto;
     display: flex;
     align-items: center;
 }
 
 .right-header {
-    margin-left: auto;
-    padding: 4vh;
     display: flex;
-    justify-content: left;
-
+    gap: 16px;
+    align-items: center;
 }
 
-.right-header p{
-    font-family: Roboto, sans-serif;
+.right-header a{
     justify-content: center;
-    text-align: end;
     padding: 10px;
+    gap: 40px;
     color: white;
+    text-decoration: none;
+    line-height: 24px;
 }
 
 .logo {
@@ -61,7 +65,7 @@ header h1 {
 }
 
 .button-login {
-    font-family: Roboto, sans-serif;
+    text-decoration: none;
     font-size: 16px;
     background-color: #CB4F57;
     color: #FCF4B6;
@@ -79,28 +83,27 @@ header h1 {
 .busca-form {
     display: flex;
     background-color: transparent;
-    border:1px solid rgba(255, 255, 255, 0.3);
+    border:1px solid rgba(255, 255, 255, 0.1);
     border-radius:8px;
-    width:180px;
+    width: 180px;
     height: 36px;
-    
+    justify-content: center;
+    align-items: center;    
 }
   
 .busca-txt {
-    background-color:transparent;
-    font-size:12px;
     border: none;
-    margin-left: 1vh;
-    max-width: 13vh;
+    background-color:transparent;
+    text-decoration: none;
+    font-size:12px;
+    width: 135px;
 }
 
 .busca-icon {
     background-color:transparent;
-    max-width: 10vh;
-    max-height: 10vh;
-    padding: 0.5vh;
+    width: 20px;
+    height: 20px;
 }
-
 
 /* Welcome Section */
 
@@ -108,68 +111,61 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: #7A1745;
-    max-height: 496px; 
-    margin: 0;
-    gap: 20px;
+    height: 496px; 
+    gap: 60px;
+    border: 5px solid green;
+    padding: 30px 170px;
 }
 
-.right-welcome {
+.left-welcome {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    padding: 20px;
-    width: 50%;
-    margin-left: 100px;
+    width: 500px;
+    max-width: 500px;
+    border: 5px solid green;
 }
 
-.right-welcome h1 {
-    font-family: Roboto, sans-serif;
+.left-welcome h1 {
     text-align: center;
     color: #FCF4B6;
-    font-size: 50px;
-    margin-bottom: 40px;
-    width: 100%;
-    margin-left: 300px;
-    margin-right: 300px;
+    font-size: 40px;
+    line-height: 48px;
+    white-space: nowrap;
 }
 
 .color1 {
     color: white;
     
 }
+
 .color2 {
     color: #FCF4B6;
 }
 
-.right-welcome p {
+.left-welcome p {
     text-align: center;
-    font-family: Roboto, sans-serif;
     font-size: 16px;
     color: #FFFFFF;
-    margin: 0;
-    max-width: 75%;
-    width: 100%; 
-    line-height: 1.6; 
-    margin-bottom: 24px;
+    line-height: 24px; 
 }
 
-.left-welcome {
+.right-welcome {
     flex: 1;
-    width: 50%;
+    width: 540px;
     justify-content: flex-start;
     align-items: center;
-    object-fit: contain;
+    border: 5px solid green;
 }
 
 .welcome-img {
     justify-content: center;
     align-items: center;
-    width: 30vh;
-    height: 30vh;
+    width: 540px;
+    height: 436px;
+    border: 5px solid green;
 }
 
 /* Manager Section */
@@ -178,39 +174,31 @@ header h1 {
     display: flex;
     flex-direction: column;
     height: 792px;
+    padding: 60px 170px;
+    gap: 60px;
 }
 
 .manager-text {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: 30px;
+    gap: 24px;
 }
 
 .manager-text h1 {
-    font-family: Roboto, sans-serif;
     text-align: left;
     color: #000;
     font-size: 40px;
-    width: 100%;
-    margin: 20px;
 }
 
 .manager-text p {
     text-align: left;   
-    font-family: Roboto, sans-serif;
     font-size: 16px;
     color: #000;
-    max-width: 100%;
-    width: 100%;
-    margin: 20px; 
     line-height: 1.6; 
 }
 
 .button-purple {
-    font-family: Roboto, sans-serif;
+    text-decoration: none;
     font-size: 16px;
     background-color: #331436;
     color: #fff;
@@ -227,12 +215,9 @@ header h1 {
 .manager-cards {
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: 50px;
-    align-items: center;
-    
+    align-items: center;   
+    justify-content: center;
+    gap: 40px; 
 }
 
 .card {
@@ -240,23 +225,19 @@ header h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 12px;
 }
 
 .card h1 {
-    font-family: Roboto, sans-serif;
     font-size: 24px;
     color: #331436;
-    margin-top: 16px;
-    margin-bottom: 10px;
-    padding: 0;
+    margin-left: 10px;
 }
 
 .card p {
-    font-family: Roboto, sans-serif;
     font-size: 20px;
     color: #331436;
-    margin: 0;
-    padding: 0;
+    margin-left: 10px;
 }
 
 /* Featured Tools Section */
@@ -264,38 +245,31 @@ header h1 {
 .featuredtools-section {
     display: flex;
     flex-direction: column;
-    height: 792px;
+    height: 552px;
     background-color: rgba(252, 244, 182, 0.5);
+    padding: 60px 170px;
 }
 
 .featuredtools-text {
-
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: 30px;
     align-items: center;
+    justify-content: center;
+    gap: 24px;
 }
 
 .featuredtools-text h1 {
-    font-family: Roboto, sans-serif;
     text-align: center;
+    justify-content: center;
     color: #331436;
     font-size: 40px;
-    width: 100%;
-    margin: 20px;
 }
 
 .featuredtools-text p {
     text-align: center;
-    font-family: Roboto, sans-serif;
+    justify-content: center;
     font-size: 16px;
     color: #331436;
-    max-width: 100%;
-    width: 100%;
-    margin: 20px; 
     line-height: 1.6; 
 }
 
@@ -303,11 +277,8 @@ header h1 {
     flex: 1;
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: 50px;
-    align-items: center; 
+    align-items: center;
+    gap: 40px;
 }
 
 .icon {
@@ -316,6 +287,7 @@ header h1 {
     flex-direction: column;
     justify-content: top;
     align-items: center;
+    gap: 20px;
 }
 
 .icon img {
@@ -323,35 +295,30 @@ header h1 {
 }
 
 .icon h1 {
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: normal;
     color: #331436;
-    margin-top: 16px;
-    margin-bottom: 10px;
-    padding: 0;
 }
 
 .icon p {
-    font-family: Roboto, sans-serif;
-    font-size: 6px;
+    font-size: 16px;
+    font-weight: normal;
     color: #331436;
-    margin: 0;
-    padding: 0;
 }
 
 /* Subscribe Section */
 
 .subscribe-section {
     flex: 1;
+    height: 388px;
     display: flex;
-    flex-direction: row; 
-    margin: 170px;
+    flex-direction: row;
+    padding: 60px 170px; 
 }
 
 .subscribe-text {
     flex: 1;
     text-align: left;
-    font-family: Roboto, sans-serif;
     color: #331436;
     width: 520px;
     margin: 60px; 
@@ -375,14 +342,20 @@ header h1 {
     display: flex;
     flex-direction: column;
     border-radius: 8px; 
-    padding: 20px;
     width: 520px;
 }
 
+.subscribe-form form{
+    flex: 1;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
 .subscribe-form label {
-    font-family: Roboto, sans-serif;
     color: #331436;
     font-size: 14px;
+    font-weight: 500;
     margin-bottom: 5px;
 }
 
@@ -390,13 +363,18 @@ header h1 {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
-  }
+}
 
-.subscribe-form-email small {
-    font-family: Roboto, sans-serif;
+#textEmail {
     font-size: 8px;
     color: red
-} 
+}
+
+#textName {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5)
+}
+
 
 .subscribe-form input {
     background-color: transparent;
@@ -420,6 +398,7 @@ footer {
     background-color: #331436;
     align-items: center;
     justify-content: center;
+    gap: 60px;
 }
 
 .footer-icons {
@@ -427,26 +406,21 @@ footer {
     flex-direction: row;
     justify-content: top;
     align-items: center;
+    gap: 18px;
 }
 
-.footer-rights, .footer-policy, .footer-terms {
+.footer-icons img {
+    width: 34px;
+    height: 34px;
+}
+
+.footer-rights p, .footer-policy p, .footer-terms p {
     color: #FFF;
-}
-
-.footer-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: top;
-    align-items: center;
-}
-
-.footer-rights, .footer-policy, .footer-terms {
-    color: #FFF;
-    width: 30%;
-    font-family: Roboto, sans-serif;
-    font-size: 6px;
+    font-size: 20px;
+    line-height: 28px;
     text-align: center;
     justify-content: center;
+    font-weight: none;
 }
 
 /* Todo Cards Section */
@@ -471,7 +445,6 @@ footer {
 }
 
 .phases-kanban h1 {
-    font-family: Roboto, sans-serif;
     font-size: 20px;
     padding: 16px;
     color: #331436;
@@ -492,12 +465,10 @@ footer {
     margin-top: 5px;
     margin-left: 5px;
     margin-right: 5px;
-    font-family: Roboto, sans-serif;
 }
 
 .card-task {
     font-size: 12px;
-    font-family: Roboto, sans-serif;
     font-weight: bold;
     padding: 10px;
 }
@@ -582,15 +553,8 @@ footer {
     width: 25px;
     height: 25px;
     color: white;
-    font-family: Roboto, sans-serif;
     font-size: 10px;
     font-weight: bold;
     border-radius: 50%;
     background-color: gray;
 }
-/* FAZER FUNCIONAR
-.card-names-right .color1 {
-    background-color: #AF4A00;
-}
-
-*/
