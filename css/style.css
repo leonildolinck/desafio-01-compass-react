@@ -23,39 +23,42 @@ body {
 header{    
     display: flex;
     justify-content: space-between;
-    align-content: flex-start;
     align-items: center;
     padding: 0 20px;
     height: 80px;
     background-color: #331436;
 }
 
-header h1 {
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+.left-header h1 {
     font-size: 28px;
     line-height: 36px;
     color: #FFF;
     font-weight: normal;
 }
 
-.left-header {
-    flex: 0 0 auto;
-    display: flex;
+.right-header {
     align-items: center;
+    display: flex;
+    gap: 40px;
 }
 
-.right-header {
+.right-header nav ul {
+    list-style: none;
+    padding: 0;
     display: flex;
     gap: 16px;
-    align-items: center;
 }
 
-.right-header a{
-    justify-content: center;
-    padding: 10px;
-    gap: 40px;
-    color: white;
+
+header .right-header nav ul li a {
     text-decoration: none;
-    line-height: 24px;
+    color: white;
+    padding: 5px 10px;
 }
 
 .logo {
@@ -78,6 +81,7 @@ header h1 {
     height: 48px;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
 }
 
 .busca-form {
@@ -88,7 +92,8 @@ header h1 {
     width: 180px;
     height: 36px;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+
 }
   
 .busca-txt {
@@ -97,6 +102,15 @@ header h1 {
     text-decoration: none;
     font-size:12px;
     width: 135px;
+    outline: none;    
+}
+
+.busca-form input {
+    color: gray;
+}
+
+.busca-form input::placeholder {
+    color: transparent; /* Torna o placeholder invisível */
 }
 
 .busca-icon {
@@ -114,7 +128,6 @@ header h1 {
     background-color: #7A1745;
     height: 496px; 
     gap: 60px;
-    border: 5px solid green;
     padding: 30px 170px;
 }
 
@@ -123,9 +136,6 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 500px;
-    max-width: 500px;
-    border: 5px solid green;
 }
 
 .left-welcome h1 {
@@ -157,7 +167,6 @@ header h1 {
     width: 540px;
     justify-content: flex-start;
     align-items: center;
-    border: 5px solid green;
 }
 
 .welcome-img {
@@ -165,7 +174,6 @@ header h1 {
     align-items: center;
     width: 540px;
     height: 436px;
-    border: 5px solid green;
 }
 
 /* Manager Section */
@@ -173,7 +181,7 @@ header h1 {
 .manager-section {
     display: flex;
     flex-direction: column;
-    height: 792px;
+    height: 793px;
     padding: 60px 170px;
     gap: 60px;
 }
@@ -181,7 +189,7 @@ header h1 {
 .manager-text {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 4px;
 }
 
 .manager-text h1 {
@@ -210,6 +218,7 @@ header h1 {
     height: 48px;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
 }
 
 .manager-cards {
@@ -218,10 +227,10 @@ header h1 {
     align-items: center;   
     justify-content: center;
     gap: 40px; 
+    max-height: 421px;
 }
 
 .card {
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -238,6 +247,11 @@ header h1 {
     font-size: 20px;
     color: #331436;
     margin-left: 10px;
+}
+
+.card img {
+    max-width: 340px;
+    max-height: 340px;
 }
 
 /* Featured Tools Section */
@@ -350,6 +364,7 @@ header h1 {
     display: flex;
     gap: 40px;
     flex-direction: column;
+
 }
 
 .subscribe-form label {
@@ -365,9 +380,14 @@ header h1 {
     margin-bottom: 15px;
 }
 
-#textEmail {
-    font-size: 8px;
-    color: red
+#subscribeEmailSmall {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+#subscribeNameSmall {
+    font-size: 12px;
+    color:red;
 }
 
 #textName {
