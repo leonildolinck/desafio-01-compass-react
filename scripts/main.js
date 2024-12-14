@@ -16,16 +16,24 @@ if(subscribeForm) {
     e.preventDefault()
   
     if (subscribeEmail.value == '' || subscribeName.value == '') {
-      subscribeNameSmall.textContent = 'You must fill all the fields!'
+      subscribeEmailSmall.textContent = 'You must fill all the fields!'
+      subscribeEmailSmall.style.color = '#7A1745'
     } else if (
       validatorEmail(subscribeEmail.value) === true &&
       validatorName(subscribeName.value) === true
-    ) {  
+    ) {
+      subscribeEmailSmall.textContent = ''
+      subscribeNameSmall.textContent = ''      
       localStorage.setItem('name', subscribeEmail.value)
       localStorage.setItem('email', subscribeName.value)
 
+      const form = document.querySelector('.subscribe-form')
+      const thankYouMessage = document.querySelector('.thank-you-message')
+      form.classList.add('hidden');
+      thankYouMessage.classList.add('visible');
+
     } else {
-      console.log('not valid')////////////////////////////// RESPOSTA
+      console.log('not valid')
     }
   })
 
@@ -37,10 +45,13 @@ if(loginForm) {
   
     if (loginEmail.value == '' || loginPassword.value == '') {
       loginEmailSmall.textContent = 'You must fill all the fields!'
+      loginEmailSmall.style.color = '#7A1745'     
     } else if (
       validatorEmail(loginEmail.value) === true &&
       validatorPassword(loginPassword.value) === true
     ) {
+      loginEmailSmall.textContent = ''
+      loginPasswordSmall.textContent = ''
       window.location.href = 'kanban.html'
     } else {
       console.log('not valid')////////////////////////////// RESPOSTA
@@ -53,7 +64,7 @@ if(subscribeForm) {
   subscribeEmail.addEventListener('keyup', () => {
     if (validatorEmail(subscribeEmail.value) !== true) {
       subscribeEmailSmall.textContent = 'The address must be : example@example.com.'
-      subscribeEmailSmall.style.color = 'red'
+      subscribeEmailSmall.style.color = '#7A1745'
     } else {
       subscribeEmailSmall.textContent = ''
       subscribeEmailSmall.style.color = ''
@@ -73,6 +84,7 @@ if(loginForm) {
   loginEmail.addEventListener('keyup', () => {
     if (validatorEmail(loginEmail.value) !== true) {
       loginEmailSmall.textContent = 'The address must be : example@example.com.'
+      loginEmailSmall.style.color = '#7A1745'
     } else {
       loginEmailSmall.textContent = ''
     }

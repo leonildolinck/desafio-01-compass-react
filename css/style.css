@@ -6,6 +6,58 @@
     box-sizing: border-box;
 }
 
+
+/* Buttons */
+
+.button-login {
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #CB4F57;
+    color: #FCF4B6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    width: 240px;    
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-login:hover {
+    background-color: #B24048;
+    color: #FFE89C;
+}
+
+.button-purple {
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #331436;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 240px;    
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-purple:hover {
+    background-color: #4A1D4E;
+    color: #D1B3E1;
+}
+
+
+  
+
+
 /* Body Section */
 
 body {
@@ -17,6 +69,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 
 /* Header Section */
 
@@ -67,23 +120,6 @@ header .right-header nav ul li a {
     margin-right: 20px;
 }
 
-.button-login {
-    text-decoration: none;
-    font-size: 16px;
-    background-color: #CB4F57;
-    color: #FCF4B6;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-    width: 240px;    
-    height: 48px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-}
-
 .busca-form {
     display: flex;
     background-color: transparent;
@@ -118,6 +154,7 @@ header .right-header nav ul li a {
     width: 20px;
     height: 20px;
 }
+
 
 /* Welcome Section */
 
@@ -176,9 +213,11 @@ header .right-header nav ul li a {
     height: 436px;
 }
 
+
 /* Manager Section */
 
 .manager-section {
+    flex: 1;
     display: flex;
     flex-direction: column;
     height: 793px;
@@ -187,14 +226,15 @@ header .right-header nav ul li a {
 }
 
 .manager-text {
+    width: 1060px;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 24px;
 }
 
 .manager-text h1 {
     text-align: left;
-    color: #000;
+    color: #000;    
     font-size: 40px;
 }
 
@@ -203,22 +243,6 @@ header .right-header nav ul li a {
     font-size: 16px;
     color: #000;
     line-height: 1.6; 
-}
-
-.button-purple {
-    text-decoration: none;
-    font-size: 16px;
-    background-color: #331436;
-    color: #fff;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 240px;    
-    height: 48px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
 }
 
 .manager-cards {
@@ -253,6 +277,7 @@ header .right-header nav ul li a {
     max-width: 340px;
     max-height: 340px;
 }
+
 
 /* Featured Tools Section */
 
@@ -319,52 +344,82 @@ header .right-header nav ul li a {
     font-weight: normal;
     color: #331436;
 }
+/*********************************************************/
 
 /* Subscribe Section */
 
 .subscribe-section {
-    flex: 1;
-    height: 388px;
     display: flex;
-    flex-direction: row;
-    padding: 60px 170px; 
-}
+    height: 388px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 170px;
+    gap: 60px;
+} 
 
 .subscribe-text {
-    flex: 1;
+    width: 490px;
+    gap: 24px;
+    margin-bottom: 20px;
     text-align: left;
     color: #331436;
-    width: 520px;
-    margin: 60px; 
     line-height: 1.6;
+    align-items: center;
 }
-
+  
 .subscribe-text h1 {
     font-size: 40px;
     font-weight: bold;
-    text-align: left;
 }
 
 .subscribe-text p {
-    padding-top: 40px;
     font-size: 16px;
-    text-align: left;
 }
 
 .subscribe-form {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    border-radius: 8px; 
-    width: 520px;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    opacity: 1;
+    visibility: visible;
 }
 
-.subscribe-form form{
-    flex: 1;
-    display: flex;
-    gap: 40px;
-    flex-direction: column;
+.subscribe-form.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
 
+.thank-you-message {
+    position: relative;
+    bottom:110px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.thank-you-message h2{
+    color: #331436;
+}
+
+.thank-you-message p{
+    margin-top: 24px;
+    color: #331436;
+}
+
+.thank-you-message.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.subscribe-form form{    
+    display: flex;
+    width: 520px;
+    flex-direction: column;
 }
 
 .subscribe-form label {
@@ -387,14 +442,23 @@ header .right-header nav ul li a {
 
 #subscribeNameSmall {
     font-size: 12px;
-    color:red;
+    color:#7A1745
+}
+
+#loginEmailSmall {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+#loginPasswordSmall {
+    font-size: 12px;
+    color: #7A1745
 }
 
 #textName {
     font-size: 12px;
     color: rgba(0, 0, 0, 0.5)
 }
-
 
 .subscribe-form input {
     background-color: transparent;
@@ -404,6 +468,7 @@ header .right-header nav ul li a {
     font-size: 14px;
     margin-bottom: 15px;
 }
+/***************************************************/
 
 /* Footer Section  */
 
@@ -442,6 +507,7 @@ footer {
     justify-content: center;
     font-weight: none;
 }
+
 
 /* Todo Cards Section */
 
