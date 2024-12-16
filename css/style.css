@@ -320,16 +320,21 @@ header .right-header nav ul li a {
   flex-direction: column;
   justify-content: center;
   gap: 1.08vw;
-  width: 340px;
 }
 
-.card h1 {
+.card-text {
+  justify-content: center;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.card.text h1 {
   font-size: 2rem;
   color: #331436;
   margin-left: 10px;
 }
 
-.card p {
+.card.text p {
   font-size: 1.6rem;
   color: #331436;
   margin-left: 10px;
@@ -572,7 +577,7 @@ footer {
 /* Login Page */
 
 .login-section {
-  min-height: 600px;
+  height: calc(100vh - 300px);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -833,6 +838,8 @@ footer {
   right: 10px;
 }
 
+/***************************/
+
 @media (max-width: 992px) {
   .container-kanban {
     justify-content: flex-start;
@@ -842,6 +849,17 @@ footer {
     display: block;
   }
 }
+
+/****************************/
+@media (max-width: 930px) {
+  .manager-cards {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+/****************************/
 
 @media (max-width: 775px) {
   header {
@@ -928,7 +946,21 @@ footer {
     padding-right: 10px;
     justify-content: space-between;
   }
+  footer {
+    height: 220px;
+    padding: 10px;
+  }
+  .footer-container {
+    gap: 10px;
+    align-items: none;
+  }
+
+  .login-section {
+    height: calc(100vh - 270px);
+  }
 }
+
+/***************************/
 
 @media (max-width: 540px) {
   .featuredtools-icons {
@@ -1012,7 +1044,7 @@ footer {
   .footer-rights p,
   .footer-policy p,
   .footer-terms p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .footer-container {
