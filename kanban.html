@@ -6,9 +6,8 @@
     <title>Kanban Page</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body class="kanban">
     <div class="container">
-
         <header>
             <div class="left-header">
                 <a href="home.html">
@@ -17,6 +16,12 @@
                 <h1>Project Manager</h1>
             </div>
             <div class="right-header">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
                 <nav>
                     <ul>
                     <li><a href="home.html">Home</a></li>
@@ -32,7 +37,7 @@
             </div>    
             
         </header>
-        <main>
+        <main class="main-content">
             <div class="container-kanban">
                 <div class="phases-kanban">
                     <h1>To Do</h1>
@@ -56,11 +61,11 @@
                             </div>
 
                             <div class="card-names-right">
-                                <div>IT</div>
-                                <div>JS</div>
-                                <div>NS</div>
-                                <div>LC</div>
-                                <div>GM</div>
+                                <div class="it-color">IT</div>
+                                <div class="js-color">JS</div>
+                                <div class="ns-color">NS</div>
+                                <div class="lc-color">LC</div>
+                                <div class="gm-color">GM</div>
                             </div>
                         </div>                        
                     </div>
@@ -84,8 +89,8 @@
                             </div>
 
                             <div class="card-names-right">
-                                <div>NS</div>
-                                <div>GM</div>
+                                <div class="ns-color">NS</div>
+                                <div class="gm-color">GM</div>
                             </div>
                         </div>                        
                     </div>
@@ -109,7 +114,7 @@
                             </div>
 
                             <div class="card-names-right">
-                                <div>GM</div>
+                                <div class="gm-color">GM</div>
                             </div>
                         </div>                        
                     </div>
@@ -136,11 +141,11 @@
                             </div>
 
                             <div class="card-names-right">
-                                <div>IT</div>
-                                <div>JS</div>
-                                <div>NS</div>
-                                <div>LC</div>
-                                <div>GM</div>
+                                <div class="it-color">IT</div>
+                                <div class="js-color">JS</div>
+                                <div class="ns-color">NS</div>
+                                <div class="lc-color">LC</div>
+                                <div class="gm-color">GM</div>
                             </div>
                         </div>                        
                     </div>
@@ -167,7 +172,7 @@
                             </div>
 
                             <div class="card-names-right">
-                                <div>GM</div>
+                                <div class="gm-color">GM</div>
                             </div>
                         </div>                        
                     </div>
@@ -191,14 +196,17 @@
                             </div>
 
                             <div class="card-names-right color1">
-                                GM
+                                <div class="gm-color">GM</div>
                             </div>
                             </div>
                         </div>                        
                     </div>
+                    <div class="arrow arrow-left">&#8592;</div>
+                    <div class="arrow arrow-right">&#8594;</div>
                 </div>
             </div>
         </main>
+
         <footer>
             <div class="footer-container">
                 <div class="footer-icons">

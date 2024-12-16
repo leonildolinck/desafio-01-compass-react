@@ -1,69 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="no-scroll">
     <div class="container">
-        <header>
-            <div class="left-header">
-                <a href="home.html">
-                    <img src="/images/logo.png" alt="" class="logo">
-                </a>
-                <h1>Project Manager</h1>
-            </div>
-        </header>
-        <main>
-            <div class="subscribe-section">
-                <div class="subscribe-text">
-                    <h1>Login Information</h1>
-                    <p>Enter your credentials</p>
-                </div>
-                <div class="subscribe-form">
-                    <form id='loginForm' method="POST">
-                        <div class="subscribe-form-email">
-                            <label for="email">Email</label>
-                            <input type="text" id="loginEmail" name="email" placeholder="Enter your email">
-                            <small id="loginEmailSmall"></small>
-                        </div>
-                        <div class="subscribe-form-email">
-                            <label for="password">Password</label>
-                            <input type="password" id="loginPassword" name="password" placeholder="Enter your password">
-                            <small id="loginPasswordSmall"></small>
-                        </div>
-                        <button type="submit" class="button-purple">Login</button>
-                    </form>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <div class="footer-container">
-                <div class="footer-icons">
-                    <a href="https://www.facebook.com">
-                        <img src="/images/facebook.svg" alt="">
-                    </a>
-                    <a href="https://www.instagram.com">
-                        <img src="/images/instagram.svg" alt="">
-                    </a>
-                    <a href="https://www.linkedin.com">
-                        <img src="/images/linkedin.svg" alt="">
-                    </a>
-                </div>
-                <div class="footer-rights">
-                    <p>© 2024 Project Manager. All rights reserved.</p>
-                </div>
-                <div class="footer-policy">
-                    <p>Privacy Policy</p>
-                </div>
-                <div class="footer-terms">
-                    <p>Terms of Service</p>
-                </div>
-            </div>            
-        </footer>
+      <header>
+        <div class="left-header">
+          <a href="home.html">
+            <img src="/images/logo.png" alt="" class="logo" />
+          </a>
+          <h1>Project Manager</h1>
+        </div>
+      </header>
+      <main>
+        <div class="login-section">
+          <div class="login-text">
+            <h1>Login Information</h1>
+            <p>Enter your credentials</p>
+          </div>
+          <div class="login-form">
+            <form id="loginForm" method="POST">
+              <div class="login-form-email">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  id="loginEmail"
+                  name="email"
+                  placeholder="Enter your email"
+                />
+                <small id="loginEmailSmall"></small>
+              </div>
+              <div class="login-form-email">
+                <label for="password">Password</label>
+                <input
+                  type="text"
+                  id="loginPassword"
+                  name="password"
+                  placeholder="Enter your password"
+                />
+                <small id="loginPasswordSmall"></small>
+              </div>
+              <button type="submit" class="button-purple">Login</button>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-icons">
+            <a href="https://www.facebook.com">
+              <img src="/images/facebook.svg" alt="" />
+            </a>
+            <a href="https://www.instagram.com">
+              <img src="/images/instagram.svg" alt="" />
+            </a>
+            <a href="https://www.linkedin.com">
+              <img src="/images/linkedin.svg" alt="" />
+            </a>
+          </div>
+          <div class="footer-rights">
+            <p>© 2024 Project Manager. All rights reserved.</p>
+          </div>
+          <div class="footer-policy">
+            <p>Privacy Policy</p>
+          </div>
+          <div class="footer-terms">
+            <p>Terms of Service</p>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="/scripts/main.js"></script>
-</body>
+  </body>
 </html>
